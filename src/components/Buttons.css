@@ -1,0 +1,38 @@
+.button-container{
+    width: 25vw;
+    height: 30vw;
+    display: grid;
+    grid-template-columns: repeat(4,5vw);
+    grid-template-rows: repeat(5,5vw);
+    justify-content: space-between;
+    align-content: space-between;
+}
+#zero{
+    grid-area: 5/1/6/3;
+    border-radius: 25vw;
+}
+#clear{
+    grid-area: 1/1/2/3;
+    border-radius: 25vw;
+}
+.button-container button:not(#zero,#clear){
+    border-radius: 50%;
+}
+.button-container button{
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.number{
+    font-size: 1.5em;
+    background-color: #505050;
+}
+.operator{
+    font-size: 1.5em;
+    background-color: #FF9500;
+}
+.function{
+    color:black !important;
+    font-size: 1em;
+    background-color: #D4D4D2;
+}
